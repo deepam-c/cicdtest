@@ -1,5 +1,7 @@
 {
   "name": "CICDTest",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
