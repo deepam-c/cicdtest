@@ -24,6 +24,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - run: ant deployCodeCheckOnly -Dsf.username=career.deepam@gmail.com Dsf.password=rajugandu
     - run: git fetch
     - run: git checkout -b master
     - run: git merge Dev
