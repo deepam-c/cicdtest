@@ -27,6 +27,7 @@ jobs:
     - run: npm ci
     - run: npm install
     - run: git checkout -b master
+    - run: git pull
     - run: git merge Dev
     - run: git push -v --tags origin master:master
     - run: npm install -g cordova ionic
