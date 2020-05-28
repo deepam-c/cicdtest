@@ -26,4 +26,5 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
     - run: npm install
+    - run: npm install -g cordova ionic
     - run: npm run build-prod
