@@ -27,5 +27,5 @@ jobs:
     - run: git fetch
     - run: git checkout -b master
     - run: git merge Dev
-    - run: git push origin master
+    - run: git push -f origin master
    
