@@ -36,9 +36,4 @@ jobs:
     - run: rm -rf public
     - run: mkdir public
     - run: cp -r www/* public
- artifacts:
-  expire_in: 1 week
-  paths:
-  - public
- only:
-  - dev
+ 
