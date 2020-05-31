@@ -28,4 +28,5 @@ jobs:
     - run: git checkout -b master
     - run: git merge Dev
     - run: git push -f origin master
-   
+    - run: npm install
+    - run: npm run publish
