@@ -31,5 +31,5 @@ jobs:
     - run: npm ci
     - run: npm install
     - run: npm install -g cordova ionic
-    - run: build-prod
+    - run: npm run build-prod
     - run: npm run publish
