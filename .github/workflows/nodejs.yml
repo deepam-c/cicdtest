@@ -29,7 +29,16 @@ jobs:
     - run: git merge Dev
     - run: git push -f origin master
     - run: npm ci
-    - run: npm install
+    
     - run: npm install -g cordova ionic
-    - run: npm run build-prod
-    - run: npm run publish
+    - run: npm install
+    - run: ionic build --prod -- --base-href https://deepam-c.github.io/CICDTest/
+    - rm -rf public
+    - mkdir public
+    - cp -r www/* public
+ artifacts:
+  expire_in: 1 week
+  paths:
+  - public
+ only:
+  - dev
