@@ -36,4 +36,4 @@ jobs:
     - run: rm -rf public
     - run: mkdir public
     - run: cp -r www/* public
-    - run: npx angular-cli-ghpages --dir=www
+    - run: npm run Dev-push 
