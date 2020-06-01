@@ -36,4 +36,4 @@ jobs:
     - run: rm -rf public
     - run: mkdir public
     - run: cp -r www/* public
-    - run: npm run Dev-push 
+    - run: npm run publish
