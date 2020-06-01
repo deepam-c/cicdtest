@@ -36,9 +36,4 @@ jobs:
     - run: rm -rf public
     - run: mkdir public
     - run: cp -r www/* public
-  - run: artifacts:
-  - run: expire_in: 1 week
-  - run: paths:
-  -run: public
- - run: only:
-  -run: dev
+    - run: npx angular-cli-ghpages --dir=www
