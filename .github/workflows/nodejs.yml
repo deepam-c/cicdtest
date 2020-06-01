@@ -29,12 +29,10 @@ jobs:
     - run: git merge Dev
     - run: git push -f origin master
     - run: npm ci
-    
+    -run: git config --global user.email "career.deepam@gmail.com"
     - run: npm install -g cordova ionic
     - run: npm install
     - run: ionic build --prod -- --base-href https://deepam-c.github.io/CICDTest/
     - run: npx angular-cli-ghpages --dir=www no-silent
-    - run: rm -rf public
-    - run: mkdir public
-    - run: cp -r www/* public
+  
     
