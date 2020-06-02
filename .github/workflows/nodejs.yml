@@ -36,7 +36,6 @@ jobs:
     - run: git version
     - run: git config --global user.email "career.deepam@gmail.com"
     - run: git config --global user.name "deepam-c"
-    - run: ngh
-    - run: npx angular-cli-ghpages --dir=www --no-silent
+    #- run: npx angular-cli-ghpages --dir=www --no-silent
   
     
