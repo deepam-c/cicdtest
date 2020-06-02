@@ -24,18 +24,18 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    # - run: git fetch
-    # - run: git checkout -b master
-    # - run: git merge Dev
-    # - run: git push -f origin master
-    - run: npm ci
-    # - run: npm install -g @angular/cli
-    - run: npm install -g cordova ionic
-    - run: npm install
-    - run: ionic build #--prod -- --base-href https://deepam-c.github.io/CICDTest/
-    - run: git version
-    - run: git config --global user.email "career.deepam@gmail.com"
-    - run: git config --global user.name "deepam-c"
+    - run: git fetch
+    - run: git checkout -b master
+    - run: git merge Dev
+    - run: git push -f origin master
+    # - run: npm ci
+    # # - run: npm install -g @angular/cli
+    # - run: npm install -g cordova ionic
+    # - run: npm install
+    # - run: ionic build #--prod -- --base-href https://deepam-c.github.io/CICDTest/
+    # - run: git version
+    # - run: git config --global user.email "career.deepam@gmail.com"
+    # - run: git config --global user.name "deepam-c"
     #- run: npx angular-cli-ghpages --dir=www --no-silent
   
     
