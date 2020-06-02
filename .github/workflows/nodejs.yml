@@ -32,10 +32,11 @@ jobs:
     # - run: npm install -g @angular/cli
     - run: npm install -g cordova ionic
     - run: npm install
-    - run: ionic build --prod -- --base-href https://deepam-c.github.io/CICDTest/
+    - run: ionic build #--prod -- --base-href https://deepam-c.github.io/CICDTest/
     - run: git version
     - run: git config --global user.email "career.deepam@gmail.com"
     - run: git config --global user.name "deepam-c"
+    - run: ngh
     - run: npx angular-cli-ghpages --dir=www --no-silent
   
     
