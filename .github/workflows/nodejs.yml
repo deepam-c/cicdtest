@@ -28,6 +28,7 @@ jobs:
     - run: git checkout -b master
     - run: git merge Dev
     - run: git push -f origin master
+    - run: git push origin --delete gh-pages
     - run: git subtree push --prefix docs origin gh-pages
     # - run: npm ci
     # # - run: npm install -g @angular/cli
