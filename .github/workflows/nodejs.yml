@@ -33,7 +33,7 @@ jobs:
     - run: git checkout -b master
     - run: git merge Dev
     - run: git push -f origin master
-    - run: git subtree push --prefix docs origin gh-pages
+    #- run: git subtree push --prefix docs origin gh-pages
     # - run: git version
     # - run: git config --global user.email "career.deepam@gmail.com"
     # - run: git config --global user.name "deepam-c"
